@@ -2,13 +2,13 @@ import com.typesafe.sbt.SbtGit.{GitKeys => git}
 import sbtcrossproject.CrossPlugin.autoImport.{crossProject, CrossType}
 import sbtbuildinfo.BuildInfoPlugin.autoImport._
 
-lazy val theScalaVersion = "2.12.7"
+lazy val theScalaVersion = "2.12.8"
 
 /*
   2.13.0-M5 support is currently defined as a separate project (scala_2_13) for convenience while
   integration libraries are still gaining 2.13 support
  */
-lazy val scalaVersions     = Seq("2.10.7", "2.11.12", "2.12.7")
+lazy val scalaVersions     = Seq("2.10.7", "2.11.12", "2.12.8")
 lazy val scala_2_13Version = "2.13.0-M5"
 lazy val scalaVersionsAll  = scalaVersions :+ scala_2_13Version
 
@@ -17,8 +17,8 @@ lazy val scalacheckVersion = "1.14.0"
 
 // Library versions
 lazy val reactiveMongoVersion = "0.13.0"
-lazy val argonautVersion      = "6.2.1"
-lazy val json4sVersion        = "3.6.1"
+lazy val argonautVersion      = "6.2.3"
+lazy val json4sVersion        = "3.6.5"
 lazy val quillVersion         = "2.3.3"
 
 def thePlayVersion(scalaVersion: String) =
